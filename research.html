@@ -47,12 +47,24 @@
             <header>
                 <h2>Selected Research</h2>
                 <p align="justify" style="padding: 0 100px">
-                My research has largely focused on stochastic control, reinforcement learning, ML applications in neuroscience, and some differential game theory. You can view my doctoral dissertation <a href="https://smartech.gatech.edu/handle/1853/59263">here</a>!
+                My research has largely focused on stochastic control, reinforcement learning, optimization, ML applications in neuroscience, and some differential game theory. You can view my doctoral dissertation <a href="https://smartech.gatech.edu/handle/1853/59263">here</a>!
                 </p>
                 <hr>
+
+                <p align="justify" style="padding: 0 100px">
+                <b></b></p><center><b>NOVAS: Nonconvex Optimization via Adaptive Stochastic Search for End-to-End Learning and Control <a href="https://arxiv.org/abs/2006.11992">[preprint]</a> <!-- <a href="none">[code]</a> <a href="https://sites.google.com/view/qss-paper"> [videos]</a>--></b>
+                    <br>work with Marcus Pereira, Ziyi Wang, and Evangelos Theodorou
+                    <br>
+                    <br><img src="paper_images/NOVAS.png" height=20% width=20%> 
+                    <br></center><p></p><p align="justify" style="padding: 0 100px">
+                In this work we propose the use of adaptive stochastic search as a building block for general, non-convex optimization operations within deep neural network architectures. Specifically, for an objective function located at some layer in the network and parameterized by some network parameters, we employ adaptive stochastic search to perform optimization over its output. This operation is differentiable and does not obstruct the passing of gradients during backpropagation, thus enabling us to incorporate it as a component in end-to-end learning. We study the proposed optimization module’s properties and benchmark it against two existing alternatives on a synthetic energy-based structured prediction task, and further showcase its use in stochastic optimal control applications.
+                <br><br>This work has been accepted to ICLR 2021.
+                </p>
+                <hr>
+
                 
                 <p align="justify" style="padding: 0 100px">
-                <b></b></p><center><b>Policy Transfer via Kinematic Domain Randomization and Adaptation <a href="https://arxiv.org/abs/2011.01891">[paper]</a> <!-- <a href="none">[code]</a> <a href="https://sites.google.com/view/qss-paper"> [videos]</a>--></b>
+                <b></b></p><center><b>Policy Transfer via Kinematic Domain Randomization and Adaptation <a href="https://arxiv.org/abs/2011.01891">[preprint]</a> <!-- <a href="none">[code]</a> <a href="https://sites.google.com/view/qss-paper"> [videos]</a>--></b>
                     <br>work with Yifeng Jiang, Wenhao Yu, and C. Karen Liu
                     <br>
                     <br><video width=40% height=40% controls>
@@ -60,7 +72,7 @@
                             Your browser does not support the video tag.
                             </video>
                     <br></center><p></p><p align="justify" style="padding: 0 100px">
-                Transferring reinforcement learning policies trained in physics simulation to the real hardware remains a challenge, known as the “sim-to-real” gap. Domain random-ization is a simple yet effective technique to address dynamics discrepancies across source and target domains, but its successgenerally depends on heuristics and trial-and-error. In this work we investigate the impact of randomized parameter selection on policy transferability across different types of domain discrepancies. Contrary to common practice in which kinematic parameters are carefully measured while dynamic parameters are randomized, we found that virtually randomizing kinematic parameters (e.g., link lengths) during training in simulation generally outperforms dynamic randomization. Based on this finding, we introduce a new domain adaptation algorithm that utilizes simulated kinematic parameters variation. Our algorithm, Multi-Policy Bayesian Optimization, trains an en- semble of universal policies conditioned on virtual kinematic parameters and efficiently adapts to the target environment using a limited number of target domain rollouts. We showcase our findings on a simulated quadruped robot in five different target environments covering different aspects of domain discrepancies.
+                Transferring reinforcement learning policies trained in physics simulation to the real hardware remains a challenge, known as the “sim-to-real” gap. Domain randomization is a simple yet effective technique to address dynamics discrepancies across source and target domains, but its success generally depends on heuristics and trial-and-error. In this work we investigate the impact of randomized parameter selection on policy transferability across different types of domain discrepancies. Contrary to common practice in which kinematic parameters are carefully measured while dynamic parameters are randomized, we found that virtually randomizing kinematic parameters (e.g., link lengths) during training in simulation generally outperforms dynamic randomization. Based on this finding, we introduce a new domain adaptation algorithm that utilizes simulated kinematic parameters variation. Our algorithm, Multi-Policy Bayesian Optimization, trains an ensemble of universal policies conditioned on virtual kinematic parameters and efficiently adapts to the target environment using a limited number of target domain rollouts. We showcase our findings on a simulated quadruped robot in five different target environments covering different aspects of domain discrepancies.
                 <!--<br><br>This work was accepted into <a href="https://icml.cc/Conferences/2020">ICML 2020</a>.-->
                 </p>
                 <hr>
@@ -91,24 +103,25 @@
                 
                 <p align="justify" style="padding: 0 100px">
                 <b></b></p><center><b>Learning Deep Optimal Control Policies using Forward and Backward SDEs 
-                <a href="https://arxiv.org/abs/2006.11992">[paper 1]</a>
-                <a href="https://arxiv.org/abs/2009.01196">[paper 2]</a>
-                <a href="http://www.roboticsproceedings.org/rss15/p70.pdf">[paper 3]</a>
-                <a href="https://doi.org/10.1109/CDC40024.2019.9028871">[paper 4]</a></b>
+                <a href="https://arxiv.org/abs/2006.11992">[preprint]</a>
+                <a href="https://corlconf.github.io/paper_408/#safe-optimal-control-using-stochastic-barrier-functions-and-deep-forward-backward-sdes">[CoRL2020 paper </a>
+                <a href="https://www.youtube.com/watch?v=iFzNnYlKBtA&feature=emb_title"> + video]</a>
+                <a href="http://www.roboticsproceedings.org/rss15/p70.pdf">[RSS2019]</a>
+                <a href="https://doi.org/10.1109/CDC40024.2019.9028871">[CDC2019]</a></b>
                     <br>work with Marcus Pereira, Ziyi Wang, and Evangelos Theodorou
                     <br>
                     <br><img src="paper_images/DFBSDE1.png" height=20% width=20%>        <img src="paper_images/DFBSDE2.png" height=22% width=22%>  <img src="paper_images/DFBSDE3.png" height=18% width=18%> 
                     <br></center><p></p><p align="justify" style="padding: 0 100px">
-                This line of work represents a deep learning extension of the stochastic optimal control framework via Forward and Backward Stochastic Differential Equations (FBSDEs), developed in my doctoral dissertation (see further down bellow).  The mathematical formulation of a Stochastic Optimal Control (SOC) problem leads to a nonlinear PDE, the Hamilton-Jacobi-Bellman PDE. This motivates algorithmic development for stochastic control that combine elements of PDE theory with deep learning. The transition from a PDE formulation to a trainable neural network is done via the concept of a system of Forward-Backward Stochastic Differential Equations (FBSDEs). Specifically, certain PDE solutions are linked to solutions of FBSDEs, which are the stochastic equivalent of a two-point boundary value problem and can be solved using a suitably defined neural network architecture. This is known in the literature as the deep FBSDE approach; the FBSDEs are then discretized over time and solved on a neural network graph. A system of FBSDEs is shown in the left figure, an example of a deep neural network architecture used to solve this system is shown in the middle. We demonstrated the scalability and applicability of the deep FBSDE controller in a finance problem, namely a 101-dimensional continuous-time stock portfolio optimization problem where the objective is to outperform the market average (see right figure).
+                This line of work represents a deep learning extension of the stochastic optimal control framework via Forward and Backward Stochastic Differential Equations (FBSDEs), developed in my doctoral dissertation (see further down bellow).  The mathematical formulation of a Stochastic Optimal Control (SOC) problem leads to a nonlinear PDE, the Hamilton-Jacobi-Bellman PDE. This motivates algorithmic development for stochastic control that combine elements of PDE theory with deep learning. The transition from a PDE formulation to a trainable neural network is done via the concept of a system of Forward-Backward Stochastic Differential Equations (FBSDEs). Specifically, certain PDE solutions are linked to solutions of FBSDEs, which are the stochastic equivalent of a two-point boundary value problem and can be solved using a suitably defined neural network architecture. This is known in the literature as the deep FBSDE approach; the FBSDEs are then discretized over time and solved on a neural network graph. A system of FBSDEs is shown in the left figure, an example of a deep neural network architecture used to solve this system is shown in the middle. Further extensions of this work include safety during learning (see <a href="https://www.youtube.com/watch?v=iFzNnYlKBtA&feature=emb_title"> CoRL2020 presentation</a>). We demonstrated the scalability and applicability of the deep FBSDE controller in a finance problem, namely a 101-dimensional continuous-time stock portfolio optimization problem where the objective is to outperform the market average (see right figure).
                 
 
-                <br><br><a href="https://arxiv.org/abs/2006.11992">Part</a> of this work has been accepted into ICLR 2021.
+                <br><br> Parts of this work have been published at RSS2019, CDC2019, CoRL2020, and ICLR 2021.
                 </p>
                 <hr>
 
                 
                 <p align="justify" style="padding: 0 100px">
-                <b></b></p><center><b>Classification of Sleep Stage and Cataplexy in Narcoleptic Mice using Supervised and Unsupervised Machine Learning <a href="https://doi.org/10.1093/sleep/zsz272">[paper]</a></b>
+                <b></b></p><center><b>Classification of Sleep Stage and Cataplexy in Narcoleptic Mice using Supervised and Unsupervised Machine Learning <a href="https://doi.org/10.1093/sleep/zsz272">[SLEEP2020]</a></b>
                     <br>I. Exarchos, A. A. Rogers, L. M. Aiani, R. E. Gross, G. D. Clifford, N. P. Pedersen, and J. T.
 Willie
                     <br>
@@ -120,6 +133,8 @@ supervised approach, we employ a deep convolutional neural network architecture 
 wake, non-REM sleep, and REM sleep in EEG/EMG time series data. The resulting trained classifier is then used to infer on the labels of previously unseen data. For the unsupervised approach, we leverage data dimensionality reduction and clustering techniques. Both approaches successfully score EEG/EMG data, achieving mean accuracies of 95% and 91%, respectively, in narcoleptic mice, and accuracies of 93% and 89%, respectively, in wild-type mice. This work is, to the best of our knowledge, the first set of algorithms created to specifically identify pathological sleep in narcoleptic mice. Currently available sleep-scoring algorithms are trained on wild-type animals with normal sleep/wake behavior and exhibit low accuracies
 for scoring pathological sleep. Therefore, this set of tools can greatly facilitate and expedite
 behavioral-state-scoring in narcoleptic mice, and thus is a valuable asset for sleep research labs.
+
+ <br><br> This work has been published in SLEEP.
                 </p>
                 <hr>
                 
@@ -127,30 +142,33 @@ behavioral-state-scoring in narcoleptic mice, and thus is a valuable asset for s
                 <p align="justify" style="padding: 0 100px">
                 <b></b></p><center><b>Stochastic Optimal Control using Forward and Backward Stochastic Differential Equations
                  <a href="https://smartech.gatech.edu/handle/1853/59263">[Thesis]</a>
-                <a href="https://www.sciencedirect.com/science/article/pii/S0005109817304740">[paper 1]</a>
-                <a href="https://doi.org/10.1016/j.sysconle.2018.06.005">[paper 2]</a>
-                <a href="https://link.springer.com/article/10.1007/s13235-018-0268-4">[paper 3]</a>
-                <a href="https://doi.org/10.2514/1.G003598">[paper 4]</a></b>
+                <a href="https://www.sciencedirect.com/science/article/pii/S0005109817304740">[Automatica]</a>
+                <a href="https://doi.org/10.1016/j.sysconle.2018.06.005">[SysConLe]</a>
+                <a href="https://link.springer.com/article/10.1007/s13235-018-0268-4">[DGAA]</a>
+                <a href="https://doi.org/10.2514/1.G003598">[JGCD]</a></b>
                     <br>work with Evangelos Theodorou and Panagiotis Tsiotras
                     <br>
                     <br><img src="paper_images/FBSDE1.png" height=22% width=22%>           <img src="paper_images/FBSDE2.png" height=20% width=20%>  <img src="paper_images/FBSDE3.png" height=18% width=18%> 
                     <br></center><p></p><p align="justify" style="padding: 0 100px">
 In this line of work, we utilized tools from control theory, stochastic calculus, and machine learning, to propose a mathematical framework capable of addressing a large variety of Stochastic Optimal Control (SOC) problems, as well as stochastic differential games.  In general, the mathematical formulation of a SOC problem leads to a nonlinear partial differential equation (PDE), known as the Hamilton-Jacobi-Bellman (HJB) PDE. Furthermore, by virtue of some results in stochastic calculus, certain PDE solutions are linked to solutions of systems of Forward and Backward Stochastic Differential Equations (FBSDEs, left figure); the latter can be seen as a stochastic equivalent of a two-point boundary value problem. Thus, rather than solving a PDE directly, one can solve its corresponding system of FBSDEs instead -- this is done numerically using sampling and function approximation techniques.  The result is a novel sampling-based algorithm, which leads to a nonlinear optimal feedback control law. This controller can be utilized for a variety of control tasks (example: cart-pole in middle figure) and differential games. This is in contrast to most available algorithms within optimal control (e.g., DDP/iLQR, Path Integral control, collocation, multiple shooting etc.) which perform local trajectory optimization and need to close the loop by recalculating the solution at each instant of time, thus requiring heavy online computation during deployment. Applying the algorithm on the fuel-optimal Mars landing problem demonstrates that a deterministic optimal control law, even if it is applied in a closed-loop fashion (i.e., by recalculating the control at each instant of time), does not mitigate the risk induced by the environmental disturbances, and leads to a high probability of crash (right figure). In contrast, using the proposed method, the probability of a crash can be controlled and can be made arbitrarily small, thus highlighting the importance of stochastic control whenever external disturbances are to be expected (right figure).
+
+ <br><br> Parts of this work have been published in Automatica, Systems & Control Letters, Dynamic Games and Applications, Journal of Guidance, Control, and Dynamics, the 2016 IEEE Conference on Decision and Control, and the 2016 American Control Conference.
                 
                 </p>
                 <hr>
                 <p align="justify" style="padding: 0 100px">
                 <b></b></p><center><b>Multi-agent Pursuit-Evasion Games 
-                    <a href="http://link.springer.com/article/10.1007/s13235-014-0130-2/">[paper 1]</a>
-                    <a href="https://ieeexplore.ieee.org/document/7040055/">[paper 2]</a>
-                    <a href="https://arc.aiaa.org/doi/10.2514/6.2016-2100">[paper 3]</a></b>
+                    <a href="http://link.springer.com/article/10.1007/s13235-014-0130-2/">[DGAA]</a>
+                    <a href="https://ieeexplore.ieee.org/document/7040055/">[CDC]</a>
+                    <a href="https://arc.aiaa.org/doi/10.2514/6.2016-2100">[GNC]</a></b>
 
                     <br>work with Meir Pachter and Panagiotis Tsiotras
                     <br>
                     <br><img src="paper_images/PE1.png" height=20% width=20%>           <img src="paper_images/PE2.png" height=20.5% width=20.5%>  <img src="paper_images/PE3.png" height=20% width=20%> 
                     <br></center><p></p><p align="justify" style="padding: 0 100px">
-                We published a couple papers on multi-agent pursuit evasion games. Using the differential game theory developed by R. Isaacs, we analyzed a game in which a less maneuverable (but potentially faster) agent is pursued by an agile agent. We determined initial conditions that lead to capture and obtained optimal controls and capture times. Using these results, we then developed a collision avoidance framework that considers the worst case of a malicious opponent that is attempting to cause a collision. The results were published in the Journal of Dynamic Games and Applications, the IEEE Conference on Decision and Control, as well as the AIAA SciTech Guidance, Navigation, and Control Conference.
+                We published a few papers on multi-agent pursuit evasion games. Using the differential game theory framework developed by R. Isaacs, we analyzed a game in which a less maneuverable (but potentially faster) agent is pursued by an agile agent. We determined initial conditions that lead to capture and obtained optimal controls and capture times. Using these results, we then developed a collision avoidance framework that considers the worst case of a malicious opponent that is attempting to cause a collision. 
                 <!--<br><br>This work was accepted into <a href="http://rldm.org/rldm2015/" target="_blank">RLDM 2015</a>.-->
+                 <br><br> The results were published in the Journal of Dynamic Games and Applications, the IEEE Conference on Decision and Control, as well as the AIAA SciTech Guidance, Navigation, and Control Conference.
                 </p>
                 <hr>
 
