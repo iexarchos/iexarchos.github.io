@@ -1,0 +1,264 @@
+@article{pereira2021deep,
+  abbr = {In submission},
+	title = {Deep L1 Stochastic Optimal Control Policies for Planetary Soft-landing},
+	author = {Pereira, Marcus A and Duarte, Camilo A and Exarchos, Ioannis and Theodorou, Evangelos A},
+	abstract = {In this paper, we introduce a novel deep learning based solution to the Powered-Descent Guidance (PDG) problem, grounded in principles of nonlinear Stochastic Optimal Control (SOC) and Feynman-Kac theory. Our algorithm solves the PDG problem by framing it as an L1 SOC problem for minimum fuel consumption. Additionally, it can handle practically useful control constraints, nonlinear dynamics and enforces state constraints as soft-constraints. This is achieved by building off of recent work on deep Forward-Backward Stochastic Differential Equations (FBSDEs) and differentiable non-convex optimization neural-network layers based on stochastic search. In contrast to previous approaches, our algorithm does not require convexification of the constraints or linearization of the dynamics and is empirically shown to be robust to stochastic disturbances and the initial position of the spacecraft. After training offline, our controller can be activated once the spacecraft is within a pre-specified radius of the landing zone and at a pre-specified altitude i.e., the base of an inverted cone with the tip at the landing zone. We demonstrate empirically that our controller can successfully and safely land all trajectories initialized at the base of this cone while minimizing fuel consumption.},
+	journal = {arXiv preprint arXiv:2109.00183},
+	year = {2022},
+	html = {https://arxiv.org/abs/2109.00183}
+}
+
+@inproceedings{exarchos2021task,
+  abbr = {ICRA},
+	title = {Task-Specific Design Optimization and Fabrication for Inflated-Beam Soft Robots with Growable Discrete Joints},
+	author = {Exarchos, Ioannis and Wang, Karen and Do, Brian H and Stroppa, Fabio and Coad, Margaret M and Okamura, Allison M and Liu, C Karen},
+	abstract = {Soft robot serial chain manipulators with the capability for growth, stiffness control, and discrete joints have the potential to approach the dexterity of traditional robot arms, while improving safety, lowering cost, and providing an increased workspace, with potential application in home environments. This paper presents an approach for design optimization of such robots to reach specified targets while minimizing the number of discrete joints and thus construction and actuation costs. We define a maximum number of allowable joints, as well as hardware constraints imposed by the materials and actuation available for soft growing robots, and we formulate and solve an optimization problem to output a planar robot design, i.e., the total number of potential joints and their locations along the robot body, which reaches all the desired targets, avoids known obstacles, and maximizes the workspace. We demonstrate a process to rapidly construct the resulting soft growing robot design. Finally, we use our algorithm to evaluate the ability of this design to reach new targets and demonstrate the algorithm's utility as a design tool to explore robot capabilities given various constraints and objectives.},
+  booktitle = {2022 IEEE International Conference on Robotics and Automation (ICRA)},
+	year = {2022},
+  organization = {IEEE},
+	html = {https://arxiv.org/abs/2103.04942}
+}
+
+@inproceedings{chen2021large,
+  abbr = {ICML},
+	title = {Large-Scale Multi-Agent Deep FBSDEs},
+	author = {Chen, Tianrong and Wang, Ziyi O and Exarchos, Ioannis and Theodorou, Evangelos},
+	abstract = {In this paper we present a scalable deep learning framework for finding Markovian Nash Equilibria in multi-agent stochastic games using fictitious play. The motivation is inspired by theoretical analysis of Forward Backward Stochastic Differential Equations and their implementation in a deep learning setting, which is the source of our algorithm's sample efficiency improvement. By taking advantage of the permutation-invariant property of agents in symmetric games, the scalability and performance is further enhanced significantly. We showcase superior performance of our framework over the state-of-the-art deep fictitious play algorithm on an inter-bank lending/borrowing problem in terms of multiple metrics. More importantly, our approach scales up to 3000 agents in simulation, a scale which, to the best of our knowledge, represents a new state-of-the-art. We also demonstrate the applicability of our framework in robotics on a belief space autonomous racing problem.},
+	booktitle = {International Conference on Machine Learning},
+	pages = {1740--1748},
+	year = {2021},
+	organization = {PMLR},
+	pdf = {http://proceedings.mlr.press/v139/chen21t/chen21t.pdf}
+}
+
+@inproceedings{exarchos2021novas,
+  abbr = {ICLR},
+	title = {NOVAS: Non-convex Optimization via Adaptive Stochastic Search for End-to-End Learning and Control},
+	author = {Exarchos, Ioannis and Pereira, Marcus A and Wang, Ziyi and Theodorou, Evangelos A},
+	abstract = {In this work we propose the use of adaptive stochastic search as a building block for general, non-convex optimization operations within deep neural network architectures. Specifically, for an objective function located at some layer in the network and parameterized by some network parameters, we employ adaptive stochastic search to perform optimization over its output. This operation is differentiable and does not obstruct the passing of gradients during backpropagation, thus enabling us to incorporate it as a component in end-to-end learning. We study the proposed optimization module's properties and benchmark it against two existing alternatives on a synthetic energy-based structured prediction task, and further showcase its use in stochastic optimal control applications.},
+	booktitle = {International Conference on Learning Representations (ICLR)},
+	year = {2021},
+	html = {https://openreview.net/forum?id=Iw4ZGwenbXf},
+	selected = {true}
+}
+
+@inproceedings{exarchos2021policy,
+  abbr = {ICRA},
+	title = {Policy transfer via kinematic domain randomization and adaptation},
+	author = {Exarchos, Ioannis and Jiang, Yifeng and Yu, Wenhao and Liu, C Karen},
+	abstract = {Transferring reinforcement learning policies trained in physics simulation to the real hardware remains a challenge, known as the "sim-to-real" gap. Domain randomization is a simple yet effective technique to address dynamics discrepancies across source and target domains, but its success generally depends on heuristics and trial-and-error. In this work we investigate the impact of randomized parameter selection on policy transferability across different types of domain discrepancies. Contrary to common practice in which kinematic parameters are carefully measured while dynamic parameters are randomized, we found that virtually randomizing kinematic parameters (e.g., link lengths) during training in simulation generally outperforms dynamic randomization. Based on this finding, we introduce a new domain adaptation algorithm that utilizes simulated kinematic parameters variation. Our algorithm, Multi-Policy Bayesian Optimization, trains an ensemble of universal policies conditioned on virtual kinematic parameters and efficiently adapts to the target environment using a limited number of target domain rollouts. We showcase our findings on a simulated quadruped robot in five different target environments covering different aspects of domain discrepancies.},
+	booktitle = {2021 IEEE International Conference on Robotics and Automation (ICRA)},
+	pages = {45--51},
+	year = {2021},
+	organization = {IEEE},
+	html = {https://arxiv.org/abs/2011.01891}
+}
+
+
+
+@inproceedings{jiang2021dash,
+  abbr = {SCA},
+	title = {DASH: Modularized Human Manipulation Simulation with Vision and Language for Embodied AI},
+	author = {Jiang, Yifeng and Guo, Michelle and Li, Jiangshan and Exarchos, Ioannis and Wu, Jiajun and Liu, C Karen},
+	abstract = {Creating virtual humans with embodied, human-like perceptual and actuation constraints has the promise to provide an integrated simulation platform for many scientific and engineering applications. We present Dynamic and Autonomous Simulated Human (DASH), an embodied virtual human that, given natural language commands, performs grasp-and-stack tasks in a physically-simulated cluttered environment solely using its own visual perception, proprioception, and touch, without requiring human motion data. By factoring the DASH system into a vision module, a language module, and manipulation modules of two skill categories, we can mix and match analytical and machine learning techniques for different modules so that DASH is able to not only perform randomly arranged tasks with a high success rate, but also do so under anthropomorphic constraints and with fluid and diverse motions. The modular design also favors analysis and extensibility to more complex manipulation skills.},
+	booktitle = {The ACM SIGGRAPH/Eurographics Symposium on Computer Animation},
+	pages = {1--12},
+	year = {2021},
+	pdf = {https://arxiv.org/pdf/2108.12536.pdf}
+}
+
+
+@inproceedings{werling2021fast,
+  abbr = {RSS},
+	title = {Fast and Feature-Complete Differentiable Physics Engine for Articulated Rigid Bodies with Contact Constraints},
+	author = {Werling, Keenon and Omens, Dalton and Lee, Jeongseok and Exarchos, Ioannis and Liu, C Karen},
+	abstract = {We present a fast and feature-complete differentiable physics engine that supports Lagrangian dynamics and hard contact constraints for articulated rigid body simulation. Our differentiable physics engine offers a complete set of features that are typically only available in non-differentiable physics simulators commonly used by robotics applications. We solve contact constraints precisely using linear complementarity problems (LCPs). We present efficient and novel analytical gradients through the LCP formulation of inelastic contact that exploit the sparsity of the LCP solution. We support complex contact geometry, and gradients approximating continuous-time elastic collision. We also introduce a novel method to compute complementarityaware gradients that help downstream optimization tasks avoid stalling in saddle points. We show that an implementation of this combination in an existing physics engine (DART) is capable of a 45x single-core speedup over finite-differencing in computing analytical Jacobians for a single timestep, while preserving all the expressiveness of original DART.},
+	booktitle = {Robotics: Science and Systems},
+	year = {2021},
+	pdf = {http://www.roboticsproceedings.org/rss17/p034.pdf}
+}
+
+@article{exarchos2020supervised,
+  abbr = {SLEEP},
+	title = {Supervised and unsupervised machine learning for automated scoring of sleep--wake and cataplexy in a mouse model of narcolepsy},
+	author = {Exarchos, Ioannis and Rogers, Anna A and Aiani, Lauren M and Gross, Robert E and Clifford, Gari D and Pedersen, Nigel P and Willie, Jon T},
+	abstract = {Despite commercial availability of software to facilitate sleep-wake scoring of electroencephalography (EEG) and electromyography (EMG) in animals, automated scoring of rodent models of abnormal sleep, such as narcolepsy with cataplexy, has remained elusive. We optimize two machine-learning approaches, supervised and unsupervised, for automated scoring of behavioral states in orexin/ataxin-3 transgenic mice, a validated model of narcolepsy type 1, and additionally test them on wild-type mice. The supervised learning approach uses previously labeled data to facilitate training of a classifier for sleep states, whereas the unsupervised approach aims to discover latent structure and similarities in unlabeled data from which sleep stages are inferred. For the supervised approach, we employ a deep convolutional neural network architecture that is trained on expert-labeled segments of wake, non-REM sleep, and REM sleep in EEG/EMG time series data. The resulting trained classifier is then used to infer on the labels of previously unseen data. For the unsupervised approach, we leverage data dimensionality reduction and clustering techniques. Both approaches successfully score EEG/EMG data, achieving mean accuracies of 95\% and 91\%, respectively, in narcoleptic mice, and accuracies of 93\% and 89\%, respectively, in wild-type mice. Notably, the supervised approach generalized well on previously unseen data from the same animals on which it was trained but exhibited lower performance on animals not present in the training data due to inter-subject variability. Cataplexy is scored with a sensitivity of 85\% and 57\% using the supervised and unsupervised approaches, respectively, when compared to manual scoring, and the specificity exceeds 99\% in both cases.},
+	journal = {Sleep},
+	volume = {43},
+	number = {5},
+	pages = {zsz272},
+	year = {2020},
+	publisher = {Oxford University Press US},
+	html = {https://doi.org/10.1093/sleep/zsz272}
+}
+
+@article{park2020optimizing,
+  abbr = {JNE},
+	title = {Optimizing neuromodulation based on surrogate neural states for seizure suppression in a rat temporal lobe epilepsy model},
+	author = {Park, Sang-Eon and Connolly, Mark J and Exarchos, Ioannis and Fernandez, Alejandra and Ghetiya, Mihir and Gutekunst, Claire-Anne and Gross, Robert E},
+	abstract = {Objective: Developing a new neuromodulation method for epilepsy treatment requires a large amount of time and resources to find effective stimulation parameters and often fails due to inter-subject variability in stimulation effect. As an alternative, we present a novel data-driven surrogate approach which can optimize the neuromodulation efficiently by investigating the stimulation effect on surrogate neural states. Approach: Medial septum (MS) optogenetic stimulation was applied for modulating electrophysiological activities of the hippocampus in a rat temporal lobe epilepsy model. For the new approach, we implemented machine learning techniques to describe the pathological neural states and to optimize the stimulation parameters. Specifically, first, we found neural state surrogates to estimate a seizure susceptibility based on hippocampal local field potentials. Second, we modulated the neural state surrogates in a desired way with the subject-specific optimal stimulation parameters found by in vivo Bayesian optimization. Finally, we tested whether modulating the neural state surrogates affected seizure frequency. Main results: We found two neural state surrogates: The first was hippocampal theta power by considering its well-known relationship with epilepsy, and the second was the output of pre-ictal state model (PriSM) which was built by characterizing the hippocampal activity during the pre-ictal period. The optimal stimulation parameters found by Bayesian optimization outperformed the other parameters in terms of modulating the surrogates toward anti-seizure neural state. When treatment efficacy was tested, the subject-specific optimal parameters for increasing theta power were more effective to suppress seizures than fixed stimulation parameter (7 Hz). However, modulation of the other neural state surrogate, PriSM, did not suppress seizures. Significance: The surrogate approach can save enormous time and resources to find subject-specific optimal stimulation parameters which can effectively modulate neural states and further improve therapeutic effectiveness. This approach can also be used for improving neuromodulation treatment of other neurological or psychiatric diseases.},
+	journal = {Journal of Neural Engineering},
+	volume = {17},
+	number = {4},
+	pages = {046009},
+	year = {2020},
+	publisher = {IOP Publishing},
+	html = {https://doi.org/10.1088/1741-2552/ab9909}
+}
+
+@article{pereira2020safe,
+	title = {Safe optimal control using stochastic barrier functions and deep forward-backward SDEs},
+	author = {Pereira, Marcus Aloysius and Wang, Ziyi and Exarchos, Ioannis and Theodorou, Evangelos A},
+	abstract = {This paper introduces a new formulation for stochastic optimal control and stochastic dynamic optimization that ensures safety with respect to state and control constraints. The proposed methodology brings together concepts such as Forward-Backward Stochastic Differential Equations, Stochastic Barrier Functions, Differentiable Convex Optimization and Deep Learning. Using the aforementioned concepts, a Neural Network architecture is designed for safe trajectory optimization in which learning can be performed in an end-to-end fashion. Simulations are performed on three systems to show the efficacy of the proposed methodology.},
+	journal = {arXiv preprint arXiv:2009.01196},
+	year = {2020},
+	html = {https://corlconf.github.io/corl2020/paper_408/}
+}
+
+@article{exarchos2019optimal,
+  abbr = {JGCD},
+	title = {Optimal Thrust Profile for Planetary Soft Landing Under Stochastic Disturbances},
+	author = {Exarchos, Ioannis and Theodorou, Evangelos A and Tsiotras, Panagiotis},
+	journal = {Journal of Guidance, Control, and Dynamics},
+	volume = {42},
+	number = {1},
+	pages = {209--216},
+	year = {2019},
+	publisher = {American Institute of Aeronautics and Astronautics},
+	html = {https://doi.org/10.2514/1.G003598}
+}
+
+@article{exarchos2019stochastic,
+  abbr = {DGAA},
+	title = {Stochastic differential games: A sampling approach via FBSDEs},
+	author = {Exarchos, Ioannis and Theodorou, Evangelos and Tsiotras, Panagiotis},
+	abstract = {The aim of this work is to present a sampling-based algorithm designed to solve various classes of stochastic differential games. The foundation of the proposed approach lies in the formulation of the game solution in terms of a decoupled pair of forward and backward stochastic differential equations (FBSDEs). In light of the nonlinear version of the Feynman–Kac lemma, probabilistic representations of solutions to the nonlinear Hamilton–Jacobi–Isaacs equations that arise for each class are obtained. These representations are in form of decoupled systems of FBSDEs, which may be solved numerically.},
+	journal = {Dynamic Games and Applications},
+	volume = {9},
+	number = {2},
+	pages = {486--505},
+	year = {2019},
+	publisher = {Springer US},
+	html = {https://link.springer.com/article/10.1007/s13235-018-0268-4}
+}
+
+@inproceedings{pereira2019learning,
+  abbr = {RSS},
+	title = {Learning deep stochastic optimal control policies using forward-backward SDEs},
+	author = {Pereira, Marcus A and Wang, Ziyi and Exarchos, Ioannis and Theodorou, Evangelos A},
+	abstract = {In this paper we propose a new methodology for decision-making under uncertainty using recent advancements in the areas of nonlinear stochastic optimal control theory, applied mathematics, and machine learning. Grounded on the fundamental relation between certain nonlinear partial differential equations and forward-backward stochastic differential equations, we develop a control framework that is scalable and applicable to general classes of stochastic systems and decision-making problem formulations in robotics and autonomy. The proposed deep neural network architectures for stochastic control consist of recurrent and fully connected layers. The performance and scalability of the aforementioned algorithm are investigated in three non-linear systems in simulation with and without control constraints. We conclude with a discussion on future directions and their implications to robotics.},
+	booktitle = {Robotics: science and systems},
+	year = {2019},
+	pdf = {http://www.roboticsproceedings.org/rss15/p70.pdf}
+}
+
+@inproceedings{wang2019deep,
+  abbr = {CDC},
+	title = {Deep forward-backward SDEs for min-max control},
+	author = {Wang, Ziyi and Lee, Keuntaek and Pereira, Marcus A and Exarchos, Ioannis and Theodorou, Evangelos A},
+	abstract = {This paper presents a novel approach to numerically solve stochastic differential games for nonlinear systems. The proposed approach relies on the nonlinear Feynman-Kac theorem that establishes a connection between parabolic deterministic partial differential equations and forward-backward stochastic differential equations. Using this theorem the Hamilton-Jacobi-Isaacs partial differential equation associated with differential games is represented by a system of forward-backward stochastic differential equations. Numerical solution of the aforementioned system of stochastic differential equations is performed using importance sampling and a Long-Short Term Memory recurrent neural network, which is trained in an offline fashion. The resulting algorithm is tested on two example systems in simulation and compared against the standard risk neutral stochastic optimal control formulations.},
+	booktitle = {2019 IEEE 58th Conference on Decision and Control (CDC)},
+	pages = {6807--6814},
+	year = {2019},
+	organization = {IEEE},
+	html = {https://doi.org/10.1109/CDC40024.2019.9028871}
+}
+
+@inproceedings{brar2018seizure,
+  abbr = {EMBC},
+	title = {Seizure reduction using model predictive control},
+	author = {Brar, Harleen K and Exarchos, Ioannis and Pan, Yunpeng and Theodorou, Evangelos and Mahmoudi, Babak},
+	abstract = {This study presents a model predictive control approach for seizure reduction in a computational model of epilepsy. The differential dynamic programming (DDP) algorithm is implemented in a model predictive fashion to optimize a controller for suppressing seizures in a chaotic oscillator model. The chaotic oscillator model uses proportional-integral (PI) controller to represent the internal control mechanism that maintains stable neural activity in a healthy brain. In the pathological case, the gains of this PI controller are reduced, preventing sufficient feedback to suppress correlation increase between normal and pathological brain dynamics. This increase in correlation leads to synchronization of oscillator dynamics leading to the destabilization of neural activity and epileptic behavior. The pathological case of the chaotic oscillator model is formulated as an optimal control problem, which we solve using the dynamic programming principle. We propose using model predictive control with differential dynamic programming optimization as a possible method for controlling epileptic seizures in known models of epilepsy.},
+	booktitle = {2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+	pages = {3152--3155},
+	year = {2018},
+	organization = {IEEE},
+	html = {https://doi.org/10.1109/EMBC.2018.8512911}
+}
+
+@article{exarchos2018stochastic,
+  abbr = {SysConLe},
+	title = {Stochastic L1-optimal control via forward and backward sampling},
+	author = {Exarchos, Ioannis and Theodorou, Evangelos A and Tsiotras, Panagiotis},
+	abstract = {The aim of this work is to present a sampling-based algorithm designed to solve a certain class of stochastic optimal control problems, utilizing forward and backward stochastic differential equations (FBSDEs). Specifically, we address the class of problems in which the running cost of the performance index involves an L1-type minimization problem in terms of the control effort. Such problems are typically called minimum fuel problems in optimal control literature. By means of a nonlinear version of the Feynman–Kac lemma, we obtain a probabilistic representation of the solution to the nonlinear Hamilton–Jacobi–Bellman equation, expressed in the form of a system of decoupled FBSDEs. This system of FBSDEs can be solved by employing linear regression techniques.},
+	journal = {Systems \& Control Letters},
+	volume = {118},
+	pages = {101--108},
+	year = {2018},
+	publisher = {Elsevier},
+	html = {https://doi.org/10.1016/j.sysconle.2018.06.005}
+}
+
+@article{exarchos2018stochastic,
+  abbr = {Automatica},
+	title = {Stochastic optimal control via forward and backward stochastic differential equations and importance sampling},
+	author = {Exarchos, Ioannis and Theodorou, Evangelos A},
+	abstract = {The aim of this work is to present a novel sampling-based numerical scheme designed to solve a certain class of stochastic optimal control problems, utilizing forward and backward stochastic differential equations (FBSDEs). By means of a nonlinear version of the Feynman–Kac lemma, we obtain a probabilistic representation of the solution to the nonlinear Hamilton–Jacobi–Bellman equation, expressed in the form of a system of decoupled FBSDEs. This system of FBSDEs can be solved by employing linear regression techniques. The proposed framework relaxes some of the restrictive conditions present in recent sampling based methods within the Linearly Solvable Optimal Control framework, and furthermore addresses problems in which the time horizon is not prespecified. To enhance the efficiency of the proposed scheme when treating more complex nonlinear systems, we then derive an iterative algorithm based on Girsanov’s theorem on the change of measure, which features importance sampling. This scheme is shown to be capable of learning the optimal control without requiring an initial guess.},
+	journal = {Automatica},
+	volume = {87},
+	pages = {159--165},
+	year = {2018},
+	publisher = {Pergamon},
+	html = {https://www.sciencedirect.com/science/article/pii/S0005109817304740},
+  selected = {true}
+}
+
+@inproceedings{exarchos2016game,
+  abbr = {CDC},
+	title = {Game-theoretic and risk-sensitive stochastic optimal control via forward and backward stochastic differential equations.},
+	author = {Exarchos, Ioannis and Theodorou, Evangelos A and Tsiotras, Panagiotis},
+	abstract = {In this work we present a sampling-based algorithm designed to solve game-theoretic control problems and risk-sensitive stochastic optimal control problems. The cornerstone of the proposed approach is the formulation of the problem in terms of forward and backward stochastic differential equations (FBSDEs). By means of a nonlinear version of the Feynman-Kac lemma, we obtain a probabilistic representation of the solution to the nonlinear Hamilton-Jacobi-Isaacs equation, expressed in the form of a decoupled system of FBSDEs. This system of FBSDEs can then be simulated by employing linear regression techniques. Utilizing the connection between stochastic differential games and risk-sensitive optimal control, we demonstrate that the proposed algorithm is also applicable to the latter class of problems. Simulation results validate the algorithm},
+	booktitle = {CDC},
+	pages = {6154--6160},
+	year = {2016},
+	html = {https://ieeexplore.ieee.org/document/7799215/}
+}
+
+@inproceedings{exarchos2016learning,
+  abbr = {ACC},
+	title = {Learning optimal control via forward and backward stochastic differential equations},
+	author = {Exarchos, Ioannis and Theodorou, Evangelos A},
+	abstract = {In this paper we present a novel sampling-based numerical scheme designed to solve a certain class of stochastic optimal control problems, utilizing forward and backward stochastic differential equations (FBSDEs). By means of a nonlinear version of the Feynman-Kac lemma, we obtain a probabilistic representation of the solution to the nonlinear Hamilton-Jacobi-Bellman equation, expressed in the form of a decoupled system of FBSDEs. This system of FBSDEs can then be simulated by employing linear regression techniques. To enhance the efficiency of the proposed scheme when treating more complex nonlinear systems, we then derive an iterative modification based on Girsanov's theorem on the change of measure, which features importance sampling. The modified scheme is capable of learning the optimal control without requiring an initial guess. We present simulations that validate the algorithm and demonstrate its efficiency in treating nonlinear dynamics.},
+	booktitle = {2016 American Control Conference (ACC)},
+	pages = {2155--2161},
+	year = {2016},
+	organization = {IEEE},
+	html = {https://ieeexplore.ieee.org/document/7525237/}
+	}
+	
+@inproceedings{exarchos2016uav,
+  abbr = {GNC},
+	title = {UAV collision avoidance based on the solution of the suicidal pedestrian differential game},
+	author = {Exarchos, Ioannis and Tsiotras, Panagiotis and Pachter, Meir},
+	abstract = {We consider the following differential game of pursuit and evasion involving two unmanned aerial vehicle agents (UAVs): an evading UAV (“evader”), which has limited maneuverability, and a pursuing UAV (“pursuer”), which is assumed to be completely agile. The two UAVs move on the Euclidean plane with different but constant speeds. Whereas the pursuer can change the orientation of its velocity vector arbitrarily fast, that is, she is a “pedestrian” a la Isaacs, the evader cannot make turns having a radius smaller than a specified minimum turning radius. This problem can be seen as a reversed roles Homicidal Chauffeur game, hence the name “Suicidal Pedestrian” differential game. The aim of this paper is to derive the optimal strategies of the two players and characterize the initial conditions that lead to capture if the pursuer acts optimally, along with the states that guarantee evasion regardless of the pursuer’s strategy. Both proximity-capture and point-capture are considered. This is a rare instance where a complete solution of a differential game can be obtained in closed-form. Utilizing the connection to Zermelo’s Navigation Problem, the two-player solution is generalized under some assumptions for the case of multiple pursuer UAVs. The results are directly applicable to collision avoidance, in the sense that safety regions are delineated in which no collision is possible, even in the worst case of malicious intent by one of the pursuers.},
+	booktitle = {AIAA Guidance, Navigation, and Control Conference},
+	pages = {2100},
+	year = {2016},
+	html = {https://arc.aiaa.org/doi/10.2514/6.2016-2100}
+}
+
+@article{exarchos2015suicidal,
+  abbr = {DGAA},
+	title = {On the Suicidal Pedestrian Differential Game},
+	author = {Exarchos, Ioannis and Tsiotras, Panagiotis and Pachter, Meir},
+	abstract = {We consider the following differential game of pursuit and evasion involving two participating players: an evader, which has limited maneuverability, and an agile pursuer. The agents move on the Euclidean plane with different but constant speeds. Whereas the pursuer can change the orientation of its velocity vector arbitrarily fast, that is, he is a “pedestrian” á la Isaacs, the evader cannot make turns having a radius smaller than a specified minimum turning radius. This problem can be seen as a reversed Homicidal Chauffeur game, hence the name “Suicidal Pedestrian Differential Game.” The aim of this paper is to derive the optimal strategies of the two players and characterize the initial conditions that lead to capture if the pursuer acts optimally, and areas that guarantee evasion regardless of the pursuer’s strategy. Both proximity-capture and point-capture are considered. After applying the optimal strategy for the evader, it is shown that the case of point-capture reduces to a special version of Zermelo’s Navigation Problem (ZNP) for the pursuer. Therefore, the well-known ZNP solution can be used to validate the results obtained through the differential game framework, as well as to characterize the time-optimal trajectories. The results are directly applicable to collision avoidance in maritime and Air Traffic Control applications.},
+	journal = {Dynamic Games and Applications},
+	volume = {5},
+	number = {3},
+	pages = {297--317},
+	year = {2015},
+	publisher = {Springer US},
+	html = {http://link.springer.com/article/10.1007/s13235-014-0130-2}
+}
+
+@inproceedings{exarchos2014asymmetric,
+  abbr = {CDC},
+	title = {An asymmetric version of the two car pursuit-evasion game},
+	author = {Exarchos, Ioannis and Tsiotras, Panagiotis},
+	abstract = {In this paper we consider a differential game of pursuit and evasion involving two players with constant, but different, speeds, and different maneuverability constraints. Specifically, the evader has limited maneuverability, while the pursuer is completely agile. This problem is an asymmetric version of the well-known Game of Two Cars. The aim of this paper is to derive the optimal strategies of the two players and characterize areas of initial conditions that lead to capture if the pursuer acts optimally, and areas that guarantee evasion regardless of the pursuer's strategy. It is shown that the problem reduces to a special version of Zermelo's Navigation Problem (ZNP) for the pursuer. Therefore, the well-known ZNP solution can be used to validate the results obtained through the differential game framework as well as to characterize the time-optimal trajectories. The results are directly applicable to collision avoidance problems.},
+	booktitle = {53rd IEEE Conference on Decision and Control},
+	pages = {4272--4277},
+	year = {2014},
+	organization = {IEEE},
+	html = {https://ieeexplore.ieee.org/document/7040055/}
+}
