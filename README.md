@@ -6,6 +6,8 @@ Made and customized by [Angelos Exarchos](https://github.com/aexarch) using [Jek
 
 Utilizes Mozilla's [PDF.js](https://github.com/mozilla/pdf.js) library for inline PDF viewing.
 
+
 Hosted from the [gh-pages](https://github.com/iexarchos/iexarchos.github.io/tree/gh-pages/) branch on [Github Pages](https://pages.github.com)
+
 
  
