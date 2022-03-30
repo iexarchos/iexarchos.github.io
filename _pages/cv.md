@@ -7,5 +7,6 @@ nav: true
 ---
 In case the inline PDF does not appear, you may download the PDF file [here]({{ site.cv.pdf | relative_url }}).
 
-{%- assign pathprefix = site.baseurl -%}
-{% pdf site.cv.pdf | page.title | pathprefix %}
+
+{%- assign pathprefix = '/' | relative_url -%}
+{% pdf site.cv.pdf | page.title | pathprefix %} %}

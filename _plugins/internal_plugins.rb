@@ -20,9 +20,10 @@ module Jekyll
        title = context[input_split[1].strip] || input_split[1].strip
        pathprefix = context[input_split[2].strip] || input_split[2].strip
       end
-      return "<iframe width=\"100%\" height=\"600px\" title=\"#{title}\" src=\"#{pathprefix}/lib/pdf.js/web/viewer.html?file=#{pathprefix}#{file}\"></iframe>"
+      return "<iframe width=\"100%\" height=\"600px\" title=\"#{title}\" src=\"#{pathprefix}lib/pdf.js/web/viewer.html?file=#{pathprefix}#{file}\"></iframe>"
     end
   end
 end
 
 Liquid::Template.register_tag('pdf', Jekyll::PDFTag)
+
