@@ -7,6 +7,7 @@ subtitle:
 profile:
   align: right
   image: prof_pic.jpg
+  no_webp: true
   address: >
     <p></p>
     <p></p>
