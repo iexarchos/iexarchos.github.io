@@ -15,10 +15,12 @@ My research has largely focused on stochastic control, reinforcement learning, o
 
 [ICLR2021](https://openreview.net/forum?id=Iw4ZGwenbXf){: .btn .btn-outline-info .btn-sm .z-depth-0}
 
-<center><video controls preload="metadata" width="80%" height="80%" controlslist="nodownload" poster="{{ 'assets/img/NOVAS.png' | relative_url }}">
+<center>
+<video controls preload="metadata" width="80%" controlslist="nodownload">
   <source src="{{ 'assets/video/NOVAS_ICLR.mp4' | relative_url }}" type="video/mp4" />
   Your browser does not support the video tag.
-</video></center>
+</video>
+</center>
 
 In this work we propose the use of adaptive stochastic search as a building block for general, non-convex optimization operations within deep neural network architectures. Specifically, for an objective function located at some layer in the network and parameterized by some network parameters, we employ adaptive stochastic search to perform optimization over its output. This operation is differentiable and does not obstruct the passing of gradients during backpropagation, thus enabling us to incorporate it as a component in end-to-end learning. We study the proposed optimization module’s properties and benchmark it against two existing alternatives on a synthetic energy-based structured prediction task, and further showcase its use in stochastic optimal control applications.  
 
@@ -32,10 +34,12 @@ This work was presented at ICLR 2021.
 [preprint](https://arxiv.org/abs/2011.01891){: .btn .btn-outline-info .btn-sm .z-depth-0}
 
 
-<center><video controls preload="metadata" width="80%" height="80%" controlslist="nodownload" poster="{{ 'assets/img/NOVAS.png' | relative_url }}">
+<center>
+<video controls preload="metadata" width="80%" controlslist="nodownload">
   <source src="{{ 'assets/video/ICRA2021_video.mp4' | relative_url }}" type="video/mp4" />
   Your browser does not support the video tag.
-</video></center>
+</video>
+</center>
 
 Transferring reinforcement learning policies trained in physics simulation to the real hardware remains a challenge, known as the “sim-to-real” gap. Domain randomization is a simple yet effective technique to address dynamics discrepancies across source and target domains, but its success generally depends on heuristics and trial-and-error. In this work we investigate the impact of randomized parameter selection on policy transferability across different types of domain discrepancies. Contrary to common practice in which kinematic parameters are carefully measured while dynamic parameters are randomized, we found that virtually randomizing kinematic parameters (e.g., link lengths) during training in simulation generally outperforms dynamic randomization. Based on this finding, we introduce a new domain adaptation algorithm that utilizes simulated kinematic parameters variation. Our algorithm, Multi-Policy Bayesian Optimization, trains an ensemble of universal policies conditioned on virtual kinematic parameters and efficiently adapts to the target environment using a limited number of target domain rollouts. We showcase our findings on a simulated quadruped robot in five different target environments covering different aspects of domain discrepancies.  
 
