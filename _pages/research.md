@@ -15,7 +15,7 @@ My research has largely focused on stochastic control, reinforcement learning, o
 
 [ICLR2021](https://openreview.net/forum?id=Iw4ZGwenbXf){: .btn .btn-outline-info .btn-sm .z-depth-0}
 
-<center><video controls="" width="80%" height="80%"><source src="{{ '/assets/video/' | relative_url }}/NOVAS_ICLR.mp4" type="video/mp4">Your browser does not support the video tag.</video></center>
+<center><video controls="" width="80%" height="80%"><source src="{{ 'assets/video/NOVAS_ICLR.mp4' | relative_url }}" type="video/mp4">Your browser does not support the video tag.</video></center>
 
 In this work we propose the use of adaptive stochastic search as a building block for general, non-convex optimization operations within deep neural network architectures. Specifically, for an objective function located at some layer in the network and parameterized by some network parameters, we employ adaptive stochastic search to perform optimization over its output. This operation is differentiable and does not obstruct the passing of gradients during backpropagation, thus enabling us to incorporate it as a component in end-to-end learning. We study the proposed optimization module’s properties and benchmark it against two existing alternatives on a synthetic energy-based structured prediction task, and further showcase its use in stochastic optimal control applications.  
 
@@ -29,7 +29,7 @@ This work was presented at ICLR 2021.
 [preprint](https://arxiv.org/abs/2011.01891){: .btn .btn-outline-info .btn-sm .z-depth-0}
 
 
-<center><video controls="" width="80%" height="80%"><source src="{{ '/assets/video/' | relative_url }}/ICRA2021_video.mp4" type="video/mp4">Your browser does not support the video tag.</video></center>
+<center><video controls="" width="80%" height="80%"><source src="{{ 'assets/video/ICRA2021_video.mp4' | relative_url }}" type="video/mp4">Your browser does not support the video tag.</video></center>
 
 Transferring reinforcement learning policies trained in physics simulation to the real hardware remains a challenge, known as the “sim-to-real” gap. Domain randomization is a simple yet effective technique to address dynamics discrepancies across source and target domains, but its success generally depends on heuristics and trial-and-error. In this work we investigate the impact of randomized parameter selection on policy transferability across different types of domain discrepancies. Contrary to common practice in which kinematic parameters are carefully measured while dynamic parameters are randomized, we found that virtually randomizing kinematic parameters (e.g., link lengths) during training in simulation generally outperforms dynamic randomization. Based on this finding, we introduce a new domain adaptation algorithm that utilizes simulated kinematic parameters variation. Our algorithm, Multi-Policy Bayesian Optimization, trains an ensemble of universal policies conditioned on virtual kinematic parameters and efficiently adapts to the target environment using a limited number of target domain rollouts. We showcase our findings on a simulated quadruped robot in five different target environments covering different aspects of domain discrepancies.  
 
@@ -43,15 +43,15 @@ This work was presented at ICRA 2021.
 
 
 {% include figure.html path="assets/img/DFBSDE1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-<center><i>Figure 1</i></center><br><br>
+<center><i>Figure 1</i></center><br><br
 
 
 {% include figure.html path="assets/img/DFBSDE2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-<center><i>Figure 2</i></center><br><br>
+<center><i>Figure 2</i></center><br><br
 
 
 {% include figure.html path="assets/img/DFBSDE3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-<center><i>Figure 3</i></center><br><br>
+<center><i>Figure 3</i></center><br><br
 
 
 This line of work represents a deep learning extension of the stochastic optimal control framework via Forward and Backward Stochastic Differential Equations (FBSDEs), developed in my doctoral dissertation (see further down bellow). The mathematical formulation of a Stochastic Optimal Control (SOC) problem leads to a nonlinear PDE, the Hamilton-Jacobi-Bellman PDE. This motivates algorithmic development for stochastic control that combine elements of PDE theory with deep learning. The transition from a PDE formulation to a trainable neural network is done via the concept of a system of Forward-Backward Stochastic Differential Equations (FBSDEs). Specifically, certain PDE solutions are linked to solutions of FBSDEs, which are the stochastic equivalent of a two-point boundary value problem and can be solved using a suitably defined neural network architecture. This is known in the literature as the deep FBSDE approach; the FBSDEs are then discretized over time and solved on a neural network graph. A system of FBSDEs is shown in figure 1, an example of a deep neural network architecture used to solve this system is shown in figure 2. Further extensions of this work include safety during learning (see [CoRL2020 presentation](https://www.youtube.com/watch?v=iFzNnYlKBtA&feature=emb_title)). We demonstrated the scalability and applicability of the deep FBSDE controller in a finance problem, namely a 101-dimensional continuous-time stock portfolio optimization problem where the objective is to outperform the market average (see figure 3).  
@@ -83,15 +83,15 @@ This work has been published in SLEEP.
 
 
 {% include figure.html path="assets/img/FBSDE1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-<center><i>Figure 1</i></center><br><br>
+<center><i>Figure 1</i></center><br><br
 
 
 {% include figure.html path="assets/img/FBSDE2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-<center><i>Figure 2</i></center><br><br>
+<center><i>Figure 2</i></center><br><br
 
 
 {% include figure.html path="assets/img/FBSDE3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-<center><i>Figure 3</i></center><br><br>
+<center><i>Figure 3</i></center><br><br
 
 
 In this line of work, we utilized tools from control theory, stochastic calculus, and machine learning, to propose a mathematical framework capable of addressing a large variety of Stochastic Optimal Control (SOC) problems, as well as stochastic differential games. In general, the mathematical formulation of a SOC problem leads to a nonlinear partial differential equation (PDE), known as the Hamilton-Jacobi-Bellman (HJB) PDE. Furthermore, by virtue of some results in stochastic calculus, certain PDE solutions are linked to solutions of systems of Forward and Backward Stochastic Differential Equations (FBSDEs, figure 1); the latter can be seen as a stochastic equivalent of a two-point boundary value problem. Thus, rather than solving a PDE directly, one can solve its corresponding system of FBSDEs instead -- this is done numerically using sampling and function approximation techniques. The result is a novel sampling-based algorithm, which leads to a nonlinear optimal feedback control law. This controller can be utilized for a variety of control tasks (example: cart-pole in figure 2) and differential games. This is in contrast to most available algorithms within optimal control (e.g., DDP/iLQR, Path Integral control, collocation, multiple shooting etc.) which perform local trajectory optimization and need to close the loop by recalculating the solution at each instant of time, thus requiring heavy online computation during deployment. Applying the algorithm on the fuel-optimal Mars landing problem demonstrates that a deterministic optimal control law, even if it is applied in a closed-loop fashion (i.e., by recalculating the control at each instant of time), does not mitigate the risk induced by the environmental disturbances, and leads to a high probability of crash (figure 3). In contrast, using the proposed method, the probability of a crash can be controlled and can be made arbitrarily small, thus highlighting the importance of stochastic control whenever external disturbances are to be expected (figure 3).  
