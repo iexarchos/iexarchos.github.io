@@ -110,6 +110,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  journal:
+    output: true
+    permalink: /journal/:path/
 
 news_limit: 3
 
