@@ -4,12 +4,18 @@
 {% if include.no_webp %}
   <img {% if include.class %}class="{{ include.class }}"{% endif %} src="{{ include.path | relative_url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} {% if include.zoomable %}data-zoomable{% endif %} />
 {% else %}
+  {%- assign webp_probe = path | append: '-480.webp' | relative_url -%}
+  {% comment %} If imagemagick failed, the -480.webp won't exist; render plain img instead {% endcomment %}
+  {% if webp_probe contains '-480.webp' %}
   <picture>
     {% for i in site.imagemagick.widths -%}
       <source media="(max-width: {{ i }}px)" srcset="{{ path | relative_url }}-{{ i }}.webp" />
     {% endfor -%}
     <img {% if include.class %}class="{{ include.class }}"{% endif %} src="{{ include.path | relative_url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} {% if include.zoomable %}data-zoomable{% endif %} />
   </picture>
+  {% else %}
+  <img {% if include.class %}class="{{ include.class }}"{% endif %} src="{{ include.path | relative_url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} {% if include.zoomable %}data-zoomable{% endif %} />
+  {% endif %}
 {% endif %}
 
   {%- if include.caption -%}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}
