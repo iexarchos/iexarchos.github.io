@@ -43,12 +43,10 @@ This work was presented at ICRA 2021.
 
 
 {% include figure.html path="assets/img/DFBSDE1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-<center><i>Figure 1</i></center><br><br
-
+<center><i>Figure 1</i></center><br><br>
 
 {% include figure.html path="assets/img/DFBSDE2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-<center><i>Figure 2</i></center><br><br
-
+<center><i>Figure 2</i></center><br><br>
 
 {% include figure.html path="assets/img/DFBSDE3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 <center><i>Figure 3</i></center><br><br
@@ -60,7 +58,7 @@ Parts of this work have been published at RSS2019, CDC2019, CoRL2020, and ICLR 2
 
 * * *
 
-<h2>*Classification of Sleep Stage and Cataplexy in Narcoleptic Mice using Supervised and Unsupervised Machine Learning</h2> 
+<h2>Classification of Sleep Stage and Cataplexy in Narcoleptic Mice using Supervised and Unsupervised Machine Learning</h2> 
 *I. Exarchos, A. A. Rogers, L. M. Aiani, R. E. Gross, G. D. Clifford, N. P. Pedersen, and J. T. Willie*
 
 [SLEEP2020](https://doi.org/10.1093/sleep/zsz272){: .btn .btn-outline-info .btn-sm .z-depth-0}
@@ -85,10 +83,8 @@ This work has been published in SLEEP.
 {% include figure.html path="assets/img/FBSDE1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 <center><i>Figure 1</i></center><br><br
 
-
 {% include figure.html path="assets/img/FBSDE2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 <center><i>Figure 2</i></center><br><br
-
 
 {% include figure.html path="assets/img/FBSDE3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 <center><i>Figure 3</i></center><br><br
