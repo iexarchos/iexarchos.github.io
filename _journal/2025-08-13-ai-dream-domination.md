@@ -14,7 +14,7 @@ _styles: |
 
 “Does AI Dream of Domination? Challenging Our Anthropomorphic Bias”
 
-When a Nobel laureate known as the "godfather of AI" warns humanity about his own life’s work, it’s probably wise to listen—but perhaps equally wise to reflect before panicking.
+When a Nobel laureate known as the "godfather of AI" [warns](https://www.youtube.com/watch?v=giT0ytynSqg) humanity about his own life's work, it's probably wise to listen—but perhaps equally wise to reflect before panicking.
 
 Geoffrey Hinton has been outspoken about potential "existential" threats posed by artificial intelligence, broadly categorized into two types. First, he highlights the concrete danger from malicious human actors who weaponize AI—deploying deepfakes, disinformation campaigns, autonomous weapon systems, and AI-assisted development of lethal biochemical vectors (we might also include accidental human mistakes). Second, he envisions a scenario in which AI systems go rogue, independently pursuing goals misaligned with human survival. While the first danger is immediate and tangible, the second remains speculative. It is this latter conjecture—AI turning against humanity without human prompting—that merits closer scrutiny. Admittedly, it's not implausible; after all, we readily conceive of an all-powerful human seeking dominance. Might AI systems, imitating human behaviors and absorbing human knowledge, logically reach similar conclusions? Yet my counterargument is that this scenario may subtly rely on our tendency to anthropomorphize intelligence—projecting our psychological makeup onto machines sharing none of our biological heritage.
 
