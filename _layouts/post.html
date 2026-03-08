@@ -45,8 +45,9 @@ layout: default
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_shortname  = '{{ site.disqus_shortname }}';
-      var disqus_identifier = '{{ page.id }}';
+      var disqus_identifier = '{{ page.id | default: page.url }}';
       var disqus_title      = {{ page.title | jsonify }};
+      var disqus_url        = '{{ page.url | absolute_url }}';
       (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
